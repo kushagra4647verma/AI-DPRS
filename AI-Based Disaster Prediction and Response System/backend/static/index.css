@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  background: url('./bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App-header {
+  background: rgba(0, 0, 0, 0.730);
+  backdrop-filter: opacity(50px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.App-header p {
+  font-size: 35px;
+  position: fixed;
+  top: 3px;
+}
+
+.title-hr {
+  background-color: #ffffff;
+  border: none;
+  height: 2px;
+}
+
+.content {
+  margin-top: 4rem;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 0px;
+  background-color: rgba(218,218,218,0.40);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.402), 0 6px 20px 0 rgba(255, 255, 255, 0.302);
+  gap: 6px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.pre_img {
+  height: 600px;
+  width: 600px;
+}
+
+.video {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #000000;
+  padding: 13px 0px;
+  padding-left: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 40px;
+  cursor: pointer;
+}
+
+#pre {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 40px;
+}
+
+p {
+  margin: 50px;
+  font-size: 72px;
+}
+
+
+/* #link {
+  display: none;
+} */
+
+
+.button {
+  background-color: #ffffff;
+  border: 1px solid rgba(218,218,218);
+  border-radius: 5px;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.430);
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.line{
+  width: 10px;
+  color: white;
+  width: 75%;
+}
