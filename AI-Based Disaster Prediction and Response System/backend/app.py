@@ -28,6 +28,13 @@ def hello_world():
     return render_template('index.html')
 
 
+@app.route("/detect-page")
+def detect_page():
+    """Post-Disaster Detection (YOLO) page. Served under its own path so it
+    does not collide with the React app that nginx serves at '/'."""
+    return render_template('index.html')
+
+
 @app.route("/download")
 def download():
     return render_template('download.html')
