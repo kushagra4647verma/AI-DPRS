@@ -112,7 +112,7 @@ function Flood({ setPredicated, setstate, onLocationChange }) {
     setLoading(true)
     try {
       const factors = mapToModelFeatures(answers)
-      const r = await axios.post("http://127.0.0.1:5001/flood", factors)
+      const r = await axios.post("/flood", factors)
       setPredicated(r.data)
       setstate(2)
     } catch { /* */ }

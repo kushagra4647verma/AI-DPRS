@@ -66,6 +66,7 @@ def detect():
         project=output_dir,
         name='.',
         exist_ok=True,
+        imgsz=320,
     )
 
     # YOLO saves all images as .jpg regardless of input format

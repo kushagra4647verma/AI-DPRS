@@ -60,7 +60,7 @@ function Earthquake({ setPredicated, setstate, onLocationChange }) {
     if (!data.latitude || !data.longitude) return
     setLoading(true)
     try {
-      const r = await axios.post("http://127.0.0.1:5001/earth", data)
+      const r = await axios.post("/earth", data)
       setPredicated(r.data)
       setstate(1)
     } catch { /* */ }

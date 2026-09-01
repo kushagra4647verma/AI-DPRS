@@ -28,7 +28,7 @@ function AlertBanner() {
     const checkAlerts = async () => {
       setLoading(true)
       try {
-        const res = await axios.post('http://127.0.0.1:5001/alerts', {
+        const res = await axios.post('/alerts', {
           latitude: location.latitude,
           longitude: location.longitude,
           radius: 1000, // 1000km radius

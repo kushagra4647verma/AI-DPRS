@@ -58,7 +58,7 @@ function Cyclone({ setPredicated, setstate, onLocationChange }) {
       const payload = { ...data,
         moderate_wind_ne: data.moderate_wind_ne || 0, moderate_wind_se: data.moderate_wind_se || 0,
         moderate_wind_sw: data.moderate_wind_sw || 0, moderate_wind_nw: data.moderate_wind_nw || 0 }
-      const r = await axios.post("http://127.0.0.1:5001/hurri", payload)
+      const r = await axios.post("/hurri", payload)
       setPredicated(r.data.predicted_max_wind)
       setstate(3)
     } catch { /* */ }

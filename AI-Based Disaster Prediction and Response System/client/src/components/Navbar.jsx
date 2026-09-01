@@ -8,7 +8,7 @@ function Navbar() {
           <div className='w-2 h-2 rounded-full bg-red-un' />
           <span className='text-sm font-semibold text-ink tracking-tight'>AI-DPRS</span>
         </div>
-        <a href='http://127.0.0.1:5001/'
+        <a href='/detect-page'
           className='text-xs font-medium text-ink-muted border border-border rounded-full px-4 py-1.5 hover:border-ink-muted hover:text-ink transition'>
           Post-Disaster Detection
         </a>

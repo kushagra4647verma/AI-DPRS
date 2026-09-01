@@ -58,7 +58,7 @@ function LiveAlert({ latitude, longitude }) {
     const check = async () => {
       setLoading(true)
       try {
-        const res = await axios.post('http://127.0.0.1:5001/alerts', { latitude, longitude, radius: 300 })
+        const res = await axios.post('/alerts', { latitude, longitude, radius: 300 })
         const newAlerts = res.data.alerts || []
         setAlerts(newAlerts)
         if (newAlerts.length > 0) setShowModal(true)
